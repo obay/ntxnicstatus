@@ -1,3 +1,5 @@
+// +build windows,amd64 linux,amd64 darwin,amd64
+
 package main
 
 import (
@@ -151,7 +153,6 @@ func declareFlags() {
 	pflag.Bool("connected", true, "Network card status. set to false to disconnect. True to connect. Default is true")
 
 	pflag.ErrHelp = errors.New("Example: " + os.Args[0] + " --hostname='192.168.10.55' --port=9440 --username='admin' --password='supersecretpassword' --insecure=false --vmname='Windows VM test' --mac='50:6b:8d:57:a3:81' --connected=false")
-	// ./positiveha --hostname='prism.nutanixjeddah.com' --port=9440 --username='admin' --password='HC@F2F%FuhIU09IO;w8UHBoY' --insecure=false --vmname='Windows VM test' --mac='50:6b:8d:57:a3:81' --connected=false
 
 	pflag.Parse()
 	viper.BindPFlags(pflag.CommandLine)
@@ -164,8 +165,6 @@ func declareFlags() {
 func main() {
 	declareFlags()
 
-	// activeVMName := "Windows VM test"
-	// macAddressToDisconnect := "50:6b:8d:57:a3:81"
 	vMNameToBeDisconnected := viper.GetString("vmname")
 	macAddressToDisconnect := viper.GetString("mac")
 	nicConnected := viper.GetBool("connected")

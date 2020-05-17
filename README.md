@@ -16,8 +16,6 @@ While Nutanix will cover any case where the host/node fails, Nutanix doesn't man
 
 Running this command on your LAN should take somewhere between 0.9 to 1.7 seconds to complete. If your monitoring software is responsive enough, your users shouldn't be down for more than a few seconds.
 
-##  
-
 ## Usage
 
 The following parameters are used when running the command
@@ -44,7 +42,7 @@ Optional. Default is set to false which means secure. This defines if your Nutan
 
 ### --vmname
 
-Required. Name of the virtual machine that you want to connect or disconnect from the network. Make sure there are no multiple virtual machines with the same name. Multiple virtual machines with the same name is not a case that is handled at this version.
+Required. Name of the virtual machine that you want to connect or disconnect from the network. This value is case sensitive. Make sure there are no multiple virtual machines with the same name. Multiple virtual machines with the same name is not a case that is handled at this version.
 
 ### --mac
 
