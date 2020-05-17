@@ -142,6 +142,8 @@ func setNicConnectivity(prismLogin *prismLoginDetails, vmUUID string, nicMac str
 }
 
 func declareFlags() {
+	pflag.Bool("version", false, "Show CLI version number.")
+
 	pflag.String("hostname", "", "Nutanix Prism hostname, IP, or FQDN (required)")
 	pflag.String("username", "", "Nutanix Prism username.")
 	pflag.String("password", "", "Nutanix Prism password")
@@ -156,6 +158,12 @@ func declareFlags() {
 
 	pflag.Parse()
 	viper.BindPFlags(pflag.CommandLine)
+
+	if viper.GetBool("version") {
+		fmt.Println("ntxnicstatus version " + "0.1")
+		os.Exit(0)
+	}
+
 	if viper.GetString("hostname") == "" || viper.GetString("username") == "" || viper.GetString("password") == "" || viper.GetString("vmname") == "" {
 		pflag.Usage()
 		os.Exit(1)

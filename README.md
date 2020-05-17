@@ -16,6 +16,14 @@ While Nutanix will cover any case where the host/node fails, Nutanix doesn't man
 
 Running this command on your LAN should take somewhere between 0.9 to 1.7 seconds to complete. If your monitoring software is responsive enough, your users shouldn't be down for more than a few seconds.
 
+## Installation
+
+### Windows
+
+### MacOS
+
+### Linux
+
 ## Usage
 
 The following parameters are used when running the command
