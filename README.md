@@ -10,7 +10,7 @@ This command can be helpful if you have a virtual machine with questionable reli
 
 You can simply clone the VM, keep the clone running with a disconnected NIC. Monitor the master VM and once it becomes unresponsive, use this command to disconnect the network card and connect the clone VM.
 
-While Nutanix will cover any case where the host/node fails, Nutanix doesn't manage the application layer and hence that is the responsibility of the application administrator. This command-line gives application administrator extended reach to control the infrastructure which can be useful if you are running an application that doesn't have failover functionality built-in at the application layer.
+While Nutanix will cover any case where the host/node fails, Nutanix doesn't manage the application layer and hence that is the responsibility of the application administrator. This command-line gives the application administrator an extended reach to control the infrastructure which can be useful if you are running an application that doesn't have failover functionality built-in at the application layer.
 
 ## Fun Fact
 
