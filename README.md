@@ -20,9 +20,33 @@ Running this command on your LAN should take somewhere between 0.9 to 1.7 second
 
 ### Windows
 
+1. Download https://github.com/obay/ntxnicstatus/blob/master/bin/ntxnicstatus-0.1-windows-amd64.zip
+2. Unzip ntxnicstatus-0.1-windows-amd64.zip
+3. Move ntxnicstatus to C:\Windows\system32
+4. Click on Start --> Run...
+5. Type cmd and hit Enter
+6. Run `ntxnicstatus --version`. You should see
+   ntxnicsstatus version 0.1
+
 ### MacOS
 
+1. Download https://github.com/obay/ntxnicstatus/blob/master/bin/ntxnicstatus-0.1-darwin-amd64.zip
+2. Unzip ntxnicstatus-0.1-darwin-amd64.zip
+3. Move ntxnicstatus to /usr/loca/bin by running the following command in the terminal:
+   `sudo mv ~/Downloads/ntxnicstatus /usr/loca/bin`
+4. Run `ntxnicstatus --version`. You should see
+   ntxnicsstatus version 0.1
+
 ### Linux
+
+1. Download https://github.com/obay/ntxnicstatus/blob/master/bin/ntxnicstatus-0.1-linux-amd64.zip
+   `wget https://github.com/obay/ntxnicstatus/blob/master/bin/ntxnicstatus-0.1-linux-amd64.zip`
+2. Unzip ntxnicstatus-0.1-linux-amd64.zip
+   `unzip ntxnicstatus-0.1-linux-amd64.zip`
+3. Move ntxnicstatus to /usr/loca/bin by running the following command in the terminal:
+   `sudo mv ntxnicstatus /usr/loca/bin`
+4. Run `ntxnicstatus --version`. You should see
+   ntxnicsstatus version 0.1
 
 ## Usage
 
