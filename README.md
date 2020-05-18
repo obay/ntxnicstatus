@@ -96,4 +96,4 @@ ntxnicstatus --hostname='192.168.20.20' --port=9440 --username='admin' --passwor
 
 ## Disclaimer
 
-This code is provided as-is for anyone using Nutanix. This is not a commercially supported software and is not associated with Nutanix in any way.
+This code is provided as-is for anyone using Nutanix. This is not a commercially supported software and is not associated with Nutanix in any way. Use at your own risk.
